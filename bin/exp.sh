@@ -1,6 +1,6 @@
 #!/usr/bin/expect
 
-set timeout 20
+set timeout 100
 
 set cmd [lindex $argv 0]
 set username [lindex $argv 1]

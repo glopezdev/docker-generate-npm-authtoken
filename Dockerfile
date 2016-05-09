@@ -14,7 +14,7 @@ RUN apt-get install -yq \
 # Update npm, then select specific version of Node.js via n
 RUN npm install -g npm && \
     npm install -g n; \
-    n 0.12;
+    n 0.12.12;
 
 ADD bin/ /usr/local/bin
 
