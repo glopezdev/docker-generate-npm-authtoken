@@ -23,7 +23,7 @@ fi
 
 npm set registry $NPM_REGISTRY
 /usr/local/bin/exp.sh "npm login" $NPM_USER $NPM_PASS $NPM_EMAIL >/dev/null 2>&1
-
+head -n -1 ~/.npmrc > temp ; mv temp ~/.npmrc
 npm set always-auth true
 
 if [ ! -e ~/.npmrc ]; then
